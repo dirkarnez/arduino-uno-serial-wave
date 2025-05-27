@@ -27,6 +27,19 @@ void plotSawtoothWave() {
    }
 }
 
+/*
+void generate_sine()
+{
+   double sineValue = sin(angle);
+   sineValue *= 255;
+   int plot = map(sineValue, -255, +255, 0, 255);
+   Serial.println(plot);
+   analogWrite(Sine_pin,plot);
+   angle += increment; 
+   if (angle > 180)
+   angle =0;
+}
+*/
 void plotSineWave() {
    for (float i = 0.0; i <= 2 * PI; i += 0.1) {
       Serial.println(sin(i));
